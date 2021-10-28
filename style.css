@@ -1,0 +1,94 @@
+:root {
+    --main-bg-color: #fffdfd;
+    --topnav-text-color: #2b2c2cb9;
+    --topnav-text-shadow-color: rgba(149, 157, 165, 0.75); 
+    --topnav-height: 140px;
+    --font-family-header: "IBM Plex Mono", monospace;
+    --font-family-body: "monospace", monospace;
+    --box-shadow-color: rgba(149, 157, 165, 0.2);
+    --div-background-color: rgba(13, 37, 59, 0.349);
+}
+
+@media screen and (max-height: 450px) {
+    .sidebar {padding-top: 15px;}
+    .sidebar a {font-size: 18px;}
+  }
+
+body {
+    overflow-y: auto;
+}
+
+.topnav {
+    width: auto;
+    height: var(--topnav-height);
+}
+
+.topnav h2 {
+    padding: 40px 40px 0 40px;
+    font-size: 180%;
+    font-family: var(--font-family-header);
+    color: var(--topnav-text-color);
+    box-shadow: var(--box-shadow-color) 0px 4px 20px;
+}
+
+.contact {
+    padding: 0 0 0 20px;
+    margin: 0px 20px 40px 40px;
+    /* background-color: var(--div-background-color); */
+    border-left: 3px solid var(--topnav-text-color);
+    /* border-radius: 4px; */
+    /* box-shadow: var(--box-shadow-color) 4px 8px 20px; */
+    font-family: var(--font-family-body);
+}
+
+.projects {
+    margin: 20px 20px 20px 40px;
+    font-size: 120%;
+    font-family: var(--font-family-header);
+    color: var(--topnav-text-color);
+}
+
+#line {
+    margin-right: 10px;
+    margin-top: 10px;
+    padding: 20px 5px 20px 5px;
+    height: 120px;
+    float: left;
+    border-left: 3px solid var(--topnav-text-color);
+}
+
+#project1 {
+    margin-right: 20px;
+    margin-top: 10px;
+    padding: 20px 5px 20px 5px;
+    float: left;
+    width: 150px;
+    text-align: center;
+    background-color: var(--div-background-color);
+    border-radius: 4px;
+    box-shadow: var(--box-shadow-color) 4px 8px 20px;
+}
+
+#project2 {
+    margin-right: 20px;
+    margin-top: 10px;
+    padding: 20px 5px 20px 5px;
+    float: left;
+    width: 150px;
+    text-align: center;
+    background-color: var(--div-background-color);
+    border-radius: 4px;
+    box-shadow: var(--box-shadow-color) 4px 8px 20px;
+}
+
+#project3 {
+    margin-top: 10px;
+    padding: 20px 5px 20px 5px;
+    float: left;
+    width: 150px;
+    text-align: center;
+    background-color: var(--div-background-color);
+    border-radius: 4px;
+    box-shadow: var(--box-shadow-color) 4px 8px 20px;
+}
+
