@@ -6,7 +6,7 @@
     --font-family-header: "monospace", monospace;
     --font-family-body: "monospace", monospace;
     --box-shadow-color: rgba(149, 157, 165, 0.2);
-    --div-background-color: rgba(13, 37, 59, 0.349);
+    --div-background-color: rgba(13, 37, 59, 0.205);
 }
 
 @media screen and (max-height: 450px) {
@@ -24,7 +24,7 @@ body {
 }
 
 .topnav h2 {
-    padding: 40px 40px 0 40px;
+    padding: 40px 40px 10px 40px;
     font-size: 180%;
     font-family: var(--font-family-header);
     font-weight: bold;
@@ -61,6 +61,12 @@ body {
     float: left;
     width: 150px;
     text-align: center;
-    border: 2px solid var(--div-background-color);
+    border: 3px solid var(--div-background-color);
     border-radius: 30px;
+    /* box-shadow: var(--box-shadow-color) 2px 4px 10px; */
+}
+
+.project:hover {
+    border: 3px solid rgba(13, 37, 59, 0.356);
+    box-shadow: var(--box-shadow-color) 2px 4px 20px;
 }
