@@ -49,7 +49,7 @@ body {
     margin-right: 10px;
     margin-top: 10px;
     padding: 20px 5px 20px 5px;
-    height: 125px;
+    height: 120px;
     float: left;
     border-left: 3px solid var(--topnav-text-color);
 }
@@ -63,10 +63,16 @@ body {
     text-align: center;
     border: 3px solid var(--div-background-color);
     border-radius: 30px;
-    /* box-shadow: var(--box-shadow-color) 2px 4px 10px; */
 }
 
 .project:hover {
     border: 3px solid rgba(13, 37, 59, 0.356);
     box-shadow: var(--box-shadow-color) 2px 4px 20px;
+}
+
+.animation {
+    height: 300px;
+    /* margin-top: 20px; */
+    /* border: 3px solid var(--div-background-color); */
+    /* box-shadow: var(--box-shadow-color) 0px 4px 30px; */
 }
