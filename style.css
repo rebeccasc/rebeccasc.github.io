@@ -3,6 +3,7 @@
     --topnav-text-color: #2b2c2cb9;
     --topnav-text-shadow-color: rgba(149, 157, 165, 0.75); 
     --topnav-height: 140px;
+    --footer-height: 80px;
     --font-family-header: "monospace", monospace;
     --font-family-body: "monospace", monospace;
     --box-shadow-color: rgba(149, 157, 165, 0.2);
@@ -49,25 +50,37 @@ body {
     margin-right: 10px;
     margin-top: 10px;
     padding: 20px 5px 20px 5px;
-    height: 120px;
+    height: 365px;
     float: left;
     border-left: 3px solid var(--topnav-text-color);
 }
 
 .project {
+    overflow: hidden; 
+}
+
+#project_logo {
     margin-right: 20px;
     margin-top: 10px;
+    margin-left: 20px;
     padding: 20px 5px 20px 5px;
     float: left;
-    width: 150px;
+    width: 130px;
     text-align: center;
     border: 3px solid var(--div-background-color);
     border-radius: 30px;
 }
 
-.project:hover {
+#project_logo:hover {
     border: 3px solid rgba(13, 37, 59, 0.356);
     box-shadow: var(--box-shadow-color) 2px 4px 20px;
+}
+
+#project_text{
+    padding-top: 40px;
+    float: left;
+    overflow: hidden;
+    font-size: 80%;
 }
 
 .animation {
@@ -75,4 +88,65 @@ body {
     /* margin-top: 20px; */
     /* border: 3px solid var(--div-background-color); */
     /* box-shadow: var(--box-shadow-color) 0px 4px 30px; */
+}
+
+svg {
+    width: 80px;
+    height: 80px;
+  }
+  
+  /* SMOKE */
+  #smoke-1 {
+    stroke-dasharray: 0, 10;
+    animation: smoke 6s ease infinite;
+  }
+  
+  #smoke-2 {
+    stroke-dasharray: 0, 10;
+    animation: smoke 6s 0.5s ease infinite;
+  }
+  
+  @keyframes smoke {
+    0% { stroke-dasharray: 0, 10; }
+    50% { stroke-dasharray: 10, 0; }
+    100% { stroke-dasharray: 10, 0; opacity: 0; }
+  }
+  
+  /* WRITING */
+  #line-1 {
+    opacity: 0;
+    animation: writing 0.5s linear forwards;
+  }
+  
+  #line-2 {
+    opacity: 0;
+    animation: writing 0.5s 1s linear forwards;
+  }
+  
+  #line-3 {
+    opacity: 0;
+    animation: writing 0.5s 1.5s linear forwards;
+  }
+  
+  #line-4 {
+    opacity: 0;
+    animation: writing 0.5s 2s linear forwards;
+  }
+  
+  @keyframes writing {
+    0% { width: 0px; opacity: 1;}
+    100% { width: 14px; opacity: 1;}
+  }
+
+  
+.footer {
+    position:absolute;
+    bottom:0;
+    width: 100%;
+    height: var(--footer-height);
+    padding-top: 20px;
+    /* background-color: red; */
+    text-align: center;
+    color: var(--topnav-text-color);
+    box-shadow: var(--box-shadow-color) 0px 4px 20px;
 }
