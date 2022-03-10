@@ -1,6 +1,6 @@
 :root {
-    --main-bg-color: #fffdfd;
-    --topnav-text-color: #2b2c2cb9;
+    --main-bg-color: #23153c;
+    --topnav-text-color: #ffffffe8;
     --topnav-text-shadow-color: rgba(149, 157, 165, 0.75); 
     --topnav-height: 140px;
     --footer-height: 80px;
@@ -17,6 +17,14 @@
 
 body {
     overflow-y: auto;
+    background-color: var(--main-bg-color) !important;
+}
+
+#background{
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: -1;
 }
 
 .topnav {
@@ -30,7 +38,7 @@ body {
     font-family: var(--font-family-header);
     font-weight: bold;
     color: var(--topnav-text-color);
-    box-shadow: var(--box-shadow-color) 0px 4px 20px;
+    /* box-shadow: var(--box-shadow-color) 0px 4px 20px; */
 }
 
 .contact {
@@ -44,6 +52,7 @@ body {
     margin: 20px 20px 20px 40px;
     font-size: 120%;
     font-family: var(--font-family-header);
+    color: var(--topnav-text-color);
 }
 
 #line {
@@ -67,14 +76,14 @@ body {
     float: left;
     width: 130px;
     text-align: center;
-    border: 3px solid var(--div-background-color);
-    border-radius: 30px;
+    /* border: 3px solid var(--div-background-color); */
+    /* border-radius: 30px; */
 }
 
-#project_logo:hover {
+/* #project_logo:hover {
     border: 3px solid rgba(13, 37, 59, 0.356);
     box-shadow: var(--box-shadow-color) 2px 4px 20px;
-}
+} */
 
 #project_text{
     padding-top: 40px;
@@ -82,62 +91,6 @@ body {
     overflow: hidden;
     font-size: 80%;
 }
-
-.animation {
-    height: 300px;
-    /* margin-top: 20px; */
-    /* border: 3px solid var(--div-background-color); */
-    /* box-shadow: var(--box-shadow-color) 0px 4px 30px; */
-}
-
-svg {
-    width: 80px;
-    height: 80px;
-  }
-  
-  /* SMOKE */
-  #smoke-1 {
-    stroke-dasharray: 0, 10;
-    animation: smoke 6s ease infinite;
-  }
-  
-  #smoke-2 {
-    stroke-dasharray: 0, 10;
-    animation: smoke 6s 0.5s ease infinite;
-  }
-  
-  @keyframes smoke {
-    0% { stroke-dasharray: 0, 10; }
-    50% { stroke-dasharray: 10, 0; }
-    100% { stroke-dasharray: 10, 0; opacity: 0; }
-  }
-  
-  /* WRITING */
-  #line-1 {
-    opacity: 0;
-    animation: writing 0.5s linear forwards;
-  }
-  
-  #line-2 {
-    opacity: 0;
-    animation: writing 0.5s 1s linear forwards;
-  }
-  
-  #line-3 {
-    opacity: 0;
-    animation: writing 0.5s 1.5s linear forwards;
-  }
-  
-  #line-4 {
-    opacity: 0;
-    animation: writing 0.5s 2s linear forwards;
-  }
-  
-  @keyframes writing {
-    0% { width: 0px; opacity: 1;}
-    100% { width: 14px; opacity: 1;}
-  }
-
   
 .footer {
     position:absolute;
