@@ -1,13 +1,14 @@
 :root {
-    --main-bg-color: #23153c;
-    --topnav-text-color: #ffffffe8;
+    --main-bg-color: rgba(29, 44, 58, 0.97);
+    --content-text-color: #ffffffe8;
+    --header-text-color: #ffffff;
     --topnav-text-shadow-color: rgba(149, 157, 165, 0.75); 
     --topnav-height: 140px;
     --footer-height: 80px;
     --font-family-header: "monospace", monospace;
     --font-family-body: "monospace", monospace;
     --box-shadow-color: rgba(149, 157, 165, 0.2);
-    --div-background-color: rgba(13, 37, 59, 0.205);
+    --div-background-color: rgba(29, 44, 58, 0.822);
 }
 
 @media screen and (max-height: 450px) {
@@ -18,6 +19,7 @@
 body {
     overflow-y: auto;
     background-color: var(--main-bg-color) !important;
+    color: var(--header-text-color) !important;
 }
 
 #background{
@@ -37,22 +39,27 @@ body {
     font-size: 180%;
     font-family: var(--font-family-header);
     font-weight: bold;
-    color: var(--topnav-text-color);
     /* box-shadow: var(--box-shadow-color) 0px 4px 20px; */
 }
 
 .contact {
-    padding: 0 0 0 20px;
+    width: fit-content;
     margin: 0px 20px 40px 40px;
-    border-left: 3px solid var(--topnav-text-color);
+    padding: 20px;
+    border-radius: 10px;
     font-family: var(--font-family-body);
+    background-color: var(--div-background-color);
+}
+
+.contact a {
+    color: var(--header-text-color) !important;
 }
 
 .projects {
     margin: 20px 20px 20px 40px;
     font-size: 120%;
+    font-weight: bold;
     font-family: var(--font-family-header);
-    color: var(--topnav-text-color);
 }
 
 #line {
@@ -61,11 +68,17 @@ body {
     padding: 20px 5px 20px 5px;
     height: 490px;
     float: left;
-    border-left: 3px solid var(--topnav-text-color);
+    border-left: 3px solid var(--content-text-color);
 }
 
 .project {
     overflow: hidden; 
+    width: 700px;
+    background-color: var(--div-background-color);
+    margin-top: 20px;
+    border-radius: 10px;
+    font-weight: normal;
+    color: var(--content-text-color);
 }
 
 #project_logo {
@@ -76,8 +89,6 @@ body {
     float: left;
     width: 130px;
     text-align: center;
-    /* border: 3px solid var(--div-background-color); */
-    /* border-radius: 30px; */
 }
 
 /* #project_logo:hover {
@@ -100,6 +111,6 @@ body {
     padding-top: 20px;
     /* background-color: red; */
     text-align: center;
-    color: var(--topnav-text-color);
+    color: var(--content-text-color);
     box-shadow: var(--box-shadow-color) 0px 4px 20px;
 }

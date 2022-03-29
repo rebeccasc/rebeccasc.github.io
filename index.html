@@ -16,8 +16,7 @@
 
   <!-- Vanta JS  -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/vanta@0.5.21/dist/vanta.waves.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/vanta@0.5.21/dist/vanta.globe.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vanta@0.5.21/dist/vanta.cells.min.js"></script>
 
 </head>
 
@@ -25,7 +24,7 @@
 
     <div id="background"></div>
     <script>
-      const bg = VANTA.GLOBE({
+      const bg = VANTA.CELLS({
         el: "#background",
         mouseControls: true,
         touchControls: true,
@@ -33,10 +32,10 @@
         minHeight: 200.00,
         minWidth: 200.00,
         scale: 1.00,
-        scaleMobile: 1.00,
-        color: 0xe37498,
-        color2: 0xcdbdbd,
-        size: 0.35
+        color1: 0x38b8b,
+        color2: 0x9f9c81,
+        size: 1.40,
+        speed: 0.40
       })
     </script>
 
@@ -48,12 +47,12 @@
     <script type="module" src="animation.js"></script> -->
 
     <div class="contact">
-      <a href="https://wiki.openstreetmap.org/wiki/User:Rebsc">OSM Wiki @Rebsc</a> <br>
-      <a href="https://github.com/rebeccasc">Github @rebeccasc</a>
+      <a href="https://wiki.openstreetmap.org/wiki/User:Rebsc"> > OSM Wiki @Rebsc</a> <br>
+      <a href="https://github.com/rebeccasc">> Github @rebeccasc</a>
     </div>
     <div class="projects">
       Projects <br>
-      <div id="line"></div>
+      <!-- <div id="line"></div> -->
 
       <div class="project">
         <div id="project_logo">
