@@ -37,6 +37,10 @@
         size: 1.40,
         speed: 0.40
       })
+
+      window.onresize = function(event) {
+        document.getElementById("background").style.height = window.innerHeight + "px"
+      };
     </script>
 
     <div class="topnav">   
